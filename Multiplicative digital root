@@ -8,6 +8,12 @@ Using the function prodDigits() of previous exercise write functions MDR() and
 MPersistence() that input a number and return its multiplicative digital root and
 multiplicative persistence respectively
 
+def proddigits(num):
+    prod=1
+    for i in (str(num)):
+        prod *= int(i)
+    return prod
+
 
 def MDR(num):
     while len(str(num)) < 2:
