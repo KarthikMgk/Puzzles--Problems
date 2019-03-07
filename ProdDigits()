@@ -1,0 +1,7 @@
+QN: To find the product of given digits in input
+
+def proddigits(num):
+    prod=1
+    for i in (str(num)):
+        prod *= int(i)
+    return prod
