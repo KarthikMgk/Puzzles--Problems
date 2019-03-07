@@ -1,0 +1,15 @@
+QN: Write a program to print twin primes less than 1000. If two consecutive odd numbers are both prime then they are known as twin primes
+
+def prime(x,y):
+    div1=[x for x in range(2,x)]
+    div2 = [x for x in range(2,y)]
+    for i in div1:
+        if x%i !=0:
+            for j in div2:
+                if y%j !=0:
+                    print('{} and {} are twin prime'.format(x,y))
+                    break
+                else:
+                    print('not a twin prime')
+                    break
+            break
