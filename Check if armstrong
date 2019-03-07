@@ -1,0 +1,12 @@
+def cubesum(num):
+    sum=0
+    for i in str(num):
+        sum+=int(i)**3
+    return sum
+
+def isarmstrong(num):
+    val = cubesum(num)
+    if val == num:
+        print('Its an armstrong number!!!')
+    else:
+        print('sorry its not an armstrong')
