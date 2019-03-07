@@ -1,0 +1,13 @@
+import numpy as np
+
+def cubesum(num):
+    sum=0
+    for i in str(num):
+        sum+=int(i)**3
+    return sum
+    
+def printarmstrong(num):
+    for i in range(1,num):
+        val = cubesum(i)
+        if val == i:
+            print('{} is an armstrong number!!!'.format(i))
