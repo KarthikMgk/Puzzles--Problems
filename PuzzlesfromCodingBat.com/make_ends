@@ -1,0 +1,7 @@
+def make_ends(nums):
+  while len(nums)>1:
+    c=[nums[0], nums[-1]]
+    return c
+  else:
+    return nums * 2
+    

@@ -1,0 +1,6 @@
+def make_out_word(out, word):
+    for element in out:
+        while len(out) % 2 ==0:
+            return out[0] + out [1] + word + out[2] + out[3]
+        else:
+            return None
